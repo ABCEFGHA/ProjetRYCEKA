@@ -1,0 +1,110 @@
+body{
+	display : flex;
+	flex-direction : column;
+	margin : 0 auto;
+	background-color: darkslategray;
+}
+
+footer{
+	background-color: black;
+	height:7%;
+	color: white;
+	opacity : 0.90;
+}
+
+
+#title{
+	text-decoration: underline;
+	color : white; 
+	font-size: 25px; 
+	margin: auto;
+	margin-top: 20px;
+}
+
+#topBlackBand{
+	background-color : black;
+	opacity : 0.90;
+	width : 100%;
+	height : 7%;
+}
+
+#Ryceka{
+	width: 30%;
+	margin-left: 2%;
+}
+
+#Ryceka:hover{
+	cursor: pointer;
+}
+
+#navigationBand{
+	width : 90%;
+	display : flex;
+	flex-direction : row;
+	justify-content : space-between;
+	padding-top: 0.95%;
+}	
+
+.navigationItems{
+	color : white;
+	width : 15%;
+}
+
+.navigationItems:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+#contact{
+	float: left;
+	margin-top: 20px;
+	margin-left: 25px;
+}
+
+#contact:hover{
+	text-decoration: underline;
+}
+
+#aboutAmiens{
+	float: right;
+	margin-top: 20px;
+	margin-right: 25px;
+}
+
+#aboutAmiens:hover{
+	text-decoration: underline;
+}
+
+
+#vrect{
+	display: flex;
+	flex-direction: column ;
+	justify-content: space-between ;
+	height: 150%;
+	width: 100%;
+	/**border : solid white;**/
+}
+
+.hrect{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between ; 
+	height: 32%;
+	width: 90%;
+	/**border: solid black;**/
+	margin : auto;
+	margin-top: 2.5%;
+}
+
+.photo{
+	border: solid white;
+	width: 35%;
+	height: 90%;
+}
+
+
+.description{
+	border: solid red;
+	width: 40%;
+	height: 90%;
+}

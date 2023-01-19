@@ -1,0 +1,27 @@
+<html>
+    <head>
+      <title></title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+		<div id="topBand">²
+			<div id="itemsBand">
+				<div style="width :30%;">
+					<span  style="color:white;">
+						Amiens<span style="color:green;">BySports</span>
+					</span>
+					</div>
+				<div id="test"> Events </div>
+				<div id="test"> Place to Go</div>
+				<div id="test"> About Amiens</div>
+				</div>
+		</div>
+		<div id="video">
+			<video>
+				<source src = 
+			</video>
+		</div>
+		
+    </body>	
+</html>
