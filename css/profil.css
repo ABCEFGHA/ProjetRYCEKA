@@ -1,0 +1,46 @@
+/* Profil css*/
+
+#infoBox{
+	background-color: black;
+	opacity: 0.7;
+	height: 80%;
+	width: 40%;
+	margin: auto;
+	margin-top : 30px;
+	margin-bottom: 30px;
+	border: solid whitesmoke 1px;
+	border-radius: 2px;
+	color: white;
+}
+
+#profil{
+	height:5%;
+	width: 30%;
+	margin:auto;
+	margin-top: 5%;
+	margin-bottom: 10px;
+}
+
+
+#saisieMdp{
+	width: 80%;
+	height: 30%;
+	margin-left: 10%;
+	margin-top: 3%;
+	font-size: 15px;
+	
+}
+
+#info{
+	color: gray;
+	text-decoration: italic 
+}
+
+#save{
+	float: right;
+	margin-top: 30px;
+	margin-right: 20px;
+	cursor: pointer;
+
+}
+

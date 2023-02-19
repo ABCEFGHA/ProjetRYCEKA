@@ -61,7 +61,7 @@ if(!empty($_POST['identifiant']) and !empty($_POST['password']) and !empty($_POS
         $Req_insert = 'INSERT INTO etudiant(UseName,mdp,reponse,Activite) VALUES(?,?,?,?)';
         $connect->Insert($Req_insert,$identifiant,$pass,$livre,$Activite);
         $_SESSION['succes'] = "Compte Validé avec succes";
-        header("location:../Inscription.php");
+        header("location:../Connect.php");
         exit;
         
     }

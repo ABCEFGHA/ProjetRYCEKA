@@ -19,8 +19,11 @@ footer{
 	font-size: 25px; 
 	margin: auto;
 	margin-top: 20px;
+	height: 20px;
+	width: fit-content;
 }
 
+/* Top Band */
 #topBlackBand{
 	background-color : black;
 	opacity : 0.90;
@@ -55,6 +58,7 @@ footer{
 	cursor: pointer;
 }
 
+/* Bottom Band */
 #contact{
 	float: left;
 	margin-top: 20px;
@@ -75,36 +79,34 @@ footer{
 	text-decoration: underline;
 }
 
-
-#vrect{
+/* CSS commun */
+.mainDiv{
 	display: flex;
 	flex-direction: column ;
-	justify-content: space-between ;
-	height: 150%;
+	justify-content: space-around ;
+	height: 120%;
 	width: 100%;
-	/**border : solid white;**/
 }
 
-.hrect{
+/* CSS communs aux pages :  Inscription | Profil */ 
+
+#activitesFav{
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between ; 
-	height: 32%;
-	width: 90%;
-	/**border: solid black;**/
-	margin : auto;
-	margin-top: 2.5%;
-}
-
-.photo{
-	border: solid white;
+	height: 13%;
 	width: 35%;
-	height: 90%;
+	margin-left: 10%;
+	background-color: lightgray ;
+	color: black;
+	border-radius: 2px;
 }
 
+.champ{
+	margin-bottom: 8px;
+	margin-top: 8px;
+	margin-left: 10%;
+}
 
-.description{
-	border: solid red;
-	width: 40%;
-	height: 90%;
+.intitule{
+	margin-left: 10%;
+	margin-bottom: 15px;
 }

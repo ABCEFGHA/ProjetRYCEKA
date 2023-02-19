@@ -1,0 +1,93 @@
+#vrect{
+	display: flex;
+	flex-direction: column ;
+	justify-content: space-between ;
+	height: 120%;
+	width: 100%;
+}
+
+#mainSection{
+	height: 80%;
+	width: 75%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-top: -25px;
+}
+
+.sportDiv{
+width: 100%;
+height: 8%;
+border: solid 0.5px white;
+text-align: center;
+font-size: 25px;
+margin: auto;
+vertical-align: middle;
+padding-top: 30px;
+background: lightgray;
+opacity: 0.7;
+}
+
+.sportDiv:hover{
+	opacity: 60;
+
+}
+
+.plusL{
+float: left;
+margin-left : 10%;
+font-size: 25px;
+}
+
+.plusR{
+float: right;
+margin-right : 10%;
+font-size: 25px;
+}
+
+
+#text{
+width: 100px;
+}
+
+
+.sportTab{
+}
+
+.tab{
+	transition-property: height;
+	transition-duration: 1s;
+	visibility: hidden;
+	height: 0%;
+	overflow: hidden;
+}
+
+table{
+	border: solid black;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+	background-color: #6C9B7B;
+	border-collapse: collapse;
+}
+
+td{
+		width: 175px;
+		color : black;
+		border:solid 0.25px;
+}
+
+.reduce{
+	width: 80px;
+}
+tr:hover{
+	opacity: 0.7;
+}
+
+tr{
+	border: solid 1px red;
+}
+
+

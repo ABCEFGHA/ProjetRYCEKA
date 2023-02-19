@@ -15,8 +15,8 @@
              <div class="navigationItems" id="navEvents"> Evènements </div>
              <div class="navigationItems" id="navPlaces"> Lieux</div>
              <?php if(isset($_SESSION['UserName'])){?>
-                 <div class="navigationItems" id="navCon"> <?php echo $_SESSION['UserName']?></div>
-                 <div class="navigationItems" id="navCon"><a href="Controle/login.php?Dec" style="color : white; text-decoration: none;">Deconnexion</a>  </div>
+                 <div class="navigationItems" id="profile"> <?php echo $_SESSION['UserName']?></div>
+                 <div class="navigationItems" ><a href="Controle/login.php?Dec" style="color : white; text-decoration: none;">Deconnexion</a>  </div>
              <?php }else{?>
              <div class="navigationItems" id="navCon"> Inscription/Connexion</div>
              <?php } ?>

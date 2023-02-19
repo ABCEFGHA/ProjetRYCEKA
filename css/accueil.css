@@ -68,19 +68,19 @@ label{
 #cbxEvent{
 	height: 0%;
 	transition-property: display height;
-	transition-duration: 2s;
+	transition-duration: 1s;
 }
 
 #cbxLieux{
 	height: 0%;
 	transition-property: display height;
-	transition-duration: 2s;
+	transition-duration: 1s;
 }
 
 #cbxActivites{
 	height: 0%;
 	transition-property: display height;
-	transition-duration: 2s;
+	transition-duration: 1s;
 }
 
 .close{
@@ -94,7 +94,6 @@ margin-right: 10px;
 	cursor: pointer;
 	text-decoration: underline white;
 }
-
 
 
 

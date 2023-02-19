@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <?php session_start(); ?>
+	<?php session_start(); ?>
 	<!-- Band RYCEKA -Evènements- -Lieux- -Inscription/Connexion- -->
 	<div id="topBlackBand">
 		<div id="navigationBand">
@@ -27,30 +27,39 @@
 		</div>
 	</div>
 
-	<span id="title" >
-		CONNEXION / INSCRIPTION  
-	</span>
+	<div id="mainDivC">
 
-	</div>	
+		<div id="title">
+			CONNEXION / INSCRIPTION  
+		</div>
 
-	<div id="divConnexion">
-		<form method = "post" action = "Controle/login.php">
-			<input type="text" placeholder="UserID" name="id" required>
+		<!-- <img id="speaker" src="src/img/speaker.png" alt="error"> -->
 
-			<input type="password" placeholder="Mot de passe" name="pwd" required>
-            <span style="color:red;"> <?php if (isset($_SESSION['errorC'])) { echo '<br>'.$_SESSION['errorC'];unset($_SESSION['errorC']);} ?> </span>
-			<span id="mdpOubliee">Mot de passe oubliée </span>
-            
-		
+
+		<div id="text">
+		Hello<span>&#128075;&#127997;</span>jeune étudiant amiéniois ! Tu es un passioné de sport ? Tu souhaites reprendre une activité sportive mais tu ne connais pas encore bien la ville ?  Une envie de décompresser après une journée de cours ? Ce site est fait pour toi! Viens découvrir les lieux et les activités que te propose ta ville ! En t'inscrivant tu auras ta propre carte personnalisée suivant tes préférences. Hâte que tu nous rejoignes <span>&#128521;</span> ! 
+		</div>
+
+		<div id="divConnexion">
+			<form method = "post" action = "Controle/login.php">
+				<input type="text" placeholder="UserID" name="id" required>
+				<input type="password" placeholder="Mot de passe" name="pwd" required>
+				<span style="color:red;"> <?php if (isset($_SESSION['errorC'])) { echo '<br>'.$_SESSION['errorC'];unset($_SESSION['errorC']);} ?> </span>
+				<span id="mdpOubliee">Mot de passe oubliée </span>
+		</div>
+
+
+		<div id="choixUtilisateur">
+				<button class="btn" type="submit">SE CONNECTER</button>
+				<button class="btn" id="inscription" type="button">S'INSCRIRE </button>
+		</div>
+
+		<div id="text2">Acceder à la carte sans s'inscrire</div>
+
+
+		</form>
+
 	</div>
-
-	<div id="choixUtilisateur">
-		<button class="btn" type="submit">SE CONNECTER</button>
-		<button class="btn" id="inscription" type="button">S'INSCRIRE </button>
-	</div>
-    </form>
-
-<script type="text/javascript" src="js/main.js"></script>
 
 
 </body>		
@@ -59,6 +68,11 @@
 	<div id="contact">Notre contact ryceka@XXX.com </div>
 	<div id="aboutAmiens">A propos d'Amiens</div>
 </footer>	
+
+<script type="text/javascript" src="js/connexion.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+
 
 </html>
 

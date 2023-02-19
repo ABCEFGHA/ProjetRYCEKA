@@ -134,7 +134,9 @@
 
 				<div id="Rect4InfoLieux">
 					<div id="nomLieu">
-						Stade de la Licorne
+						<span>-</span>
+						<span>Stade de la Licorne<span>
+						<span>-</span>
 					</div>
 
 					<div id="slideShow">
@@ -203,25 +205,28 @@ function initMap(){
 // Initialisation de la fenêtre de gestion d'itinéraire
 
 //  Mis en place des markers 
+
 let markerLicorne = [];
 for(var i = 0; i<json.length; i++)
 {
-	markerLicorne[i] = L.marker([json[i].latitude,json[i].longitude]).addTo(map);
-	markerLicorne[i].bindPopup(json[i].nomL); 
+	markerLicorne[i] = L.marker([json[i].latitude,json[i].longitude]).addTo(map).on('click', markerOnclick);
+	markerLicorne[i].bindPopup(json[i].nomL);
 
 }
- 	/*var markerLicorne = L.marker([49.89467767374285,2.263876168762741]).addTo(map);
-	markerLicorne.bindPopup("Stade de la licorne");  
 
-	var markerStPierre = L.marker([49.899183139216674, 2.3079308674727854]).addTo(map);
-	var markerTeam5 = L.marker([49.926114946621546, 2.3011540692834784]).addTo(map);  */
+var title = document.querySelector("#nomLieu");
+
+function markerOnclick(e){
+	var popup = e.target.getPopup();
+	
+	//alert(popup.getContent());
+	title.innerHTML = popup.getContent();
+}
 	
 	var grayIcon = new L.Icon({
   		iconUrl: 'src/img/grayMarker.png',
   		iconSize: [30,40],
   	});
- 	/*var markerColiseum = L.marker([49.894001789866294, 2.2891742259289494],{icon: grayIcon}).addTo(map); 
- 	markerColiseum.bindPopup("Coliseum"); */ 
 } 
 initMap();
 
@@ -230,6 +235,8 @@ var routingControl = L.Routing.control({
 	geocoder : L.Control.Geocoder.nominatim(),
 	language : "fr",
 }).addTo(map);
+
+
 
 
 // Récupération de la position de l'utilisateur

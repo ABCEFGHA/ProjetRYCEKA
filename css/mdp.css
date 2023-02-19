@@ -1,0 +1,20 @@
+/* Mdp css*/
+
+#mainDiv{
+	height: 30%;
+	width : 40%;
+	border: solid 1px white;
+	margin: auto;
+	background-color: black;
+	opacity: 0.8;
+	margin-top: 30px;
+}
+
+#txt{
+	height: 20%;
+	width: 50%;
+	margin: auto;
+	color:white;
+	display: inline-block;
+	
+}

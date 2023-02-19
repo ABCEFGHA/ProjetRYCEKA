@@ -4,12 +4,8 @@ input{
 	margin: auto;
 	margin-top: 5%;
 	width: 80%;
-	height: 15%;
-}
-
-body{
-	height: 120%;
-}
+	height: 20%;
+} 
 
 #mdpOubliee{
 	float: right;
@@ -22,21 +18,24 @@ body{
 	text-decoration: underline;
 }
 
+#mainDivC{
+	height: 100%;
+	width: 100%;
+}
+
 #divConnexion {
-	height: 30%;
+	margin: auto;
+	height: 27%;
 	width : 40%;
 	border: solid 1px white;
-	margin: auto;
 	background-color: black;
-	margin-top: -7%;
 	opacity: 0.8;
 }
 
 #choixUtilisateur{
-	height: 5%;
+	height: 7%;
 	width: 40%;
-	margin: auto;
-	margin-top: -5%;
+	margin: 2% auto ;
 	display: flex;
 	justify-content: space-between;
 }
@@ -46,4 +45,39 @@ body{
 	width: 49%;
 }
 
-#inscription{}
+#text{
+	font-size: 19px;
+	margin: 3%  auto;
+	width: 49.5%;
+	height: fit-content;
+	text-align: justify;
+	color: #E4E7E5;
+	font-family: "Gabriola";
+}
+
+#speaker{
+	height: 50px;
+	width: 50px;
+	margin-top: 10%;
+	margin-left: 15%;
+	position: absolute;
+}
+
+#text2{
+	color: #E4E7E5;
+	font-family: "Gabriola";
+	font-size:17px;
+	text-decoration: underline;
+	margin-top: 1%;
+	margin-left: 57%;
+	width: fit-content;
+}
+
+#text2:hover{
+	cursor: pointer;
+}
+
+#map{
+	margin: auto;
+}
+
